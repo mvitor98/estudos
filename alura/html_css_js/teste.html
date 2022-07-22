@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+    
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+    };
+
+    function mostra(texto) {
+
+        document.write(texto)
+
+    }
+
+    mostra('A média entre 10, 20 e 30 é: ' + ((10+20+30)/3));
+    pulaLinha();
+    mostra("Márcio nasceu em " + (2022 - 24));
+    pulaLinha();
+    var ano = 2022;
+
+    mostra("A idade de Maria Luiza é " + (ano - 1963) + "<br>");
+    mostra("A idade de Márcio é " + (ano - 1998) + "<br>");
+    mostra("A idade de Marcos Luiza é " + (ano - 1953));
+    pulaLinha();
+
+    var idadeMariaLuiza = ano - 1963;
+    var idadeMarcio = ano - 1998;
+    var idadeMarcos = ano - 1953;
+    var media_idades = (idadeMariaLuiza + idadeMarcio + idadeMarcos)/3;
+
+    document.write("A média das idades é " + Math.round(media_idades) + "<br>");
+
+    
+</script>
